@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IRepositoryWrapper.cs" />
+    <Compile Remove="MainRepository.cs" />
+    <Compile Remove="RepositoryQueryHelper.cs" />
+    <Compile Remove="RepositoryWrapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Domain.Aggregate\Zeppeling.Infrastructure.Domain.Aggregate.csproj" />
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Domain.Contract\Zeppeling.Infrastructure.Domain.Contract\Zeppeling.Infrastructure.Domain.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

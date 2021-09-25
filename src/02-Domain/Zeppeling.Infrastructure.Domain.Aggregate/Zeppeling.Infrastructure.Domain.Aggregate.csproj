@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-Core\Zeppeling.Infrastructure.Core.Contract\Zeppeling.Infrastructure.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\01-Core\Zeppeling.Infrastructure.Core.Response\Zeppeling.Infrastructure.Core.Response.csproj" />
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Domain.Contract\Zeppeling.Infrastructure.Domain.Contract\Zeppeling.Infrastructure.Domain.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MediatR">
+      <HintPath>C:\Users\kemal.akoglu\.nuget\packages\mediatr\7.0.0\lib\netstandard2.0\MediatR.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

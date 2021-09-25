@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IRepository.cs" />
+    <Compile Remove="IRepositoryQueryHelper.cs" />
+    <Compile Remove="ISerilogLogger.cs" />
+    <Compile Remove="IUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Zeppeling.Framework.Core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Core.Configuration\Zeppeling.Infrastructure.Core.Configuration.csproj" />
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Core.Enumeration\Zeppeling.Infrastructure.Core.Enumeration.csproj" />
+    <ProjectReference Include="..\Zeppeling.Infrastructure.Core.Response\Zeppeling.Infrastructure.Core.Response.csproj" />
+  </ItemGroup>
+
+</Project>
